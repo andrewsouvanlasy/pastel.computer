@@ -1,7 +1,8 @@
-baseurl = "/"
+baseurl = "https://pastel.computer"
 paginate = 4
 title = "pastel.computer"
 copyright = "Andrew Souvanlasy"
+pygmentsUseClasses = true
 
 [params]
   subtitle = "Andrew Souvanlasy's personal site"

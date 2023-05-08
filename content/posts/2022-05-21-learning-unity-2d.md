@@ -36,7 +36,7 @@ Thankfully, I found an great tutorial series by [Pandemonium](https://www.youtub
 
 #### Thoughts on C# Scripting
 
-Coding C# for Unity is surprisingly intuitive. You have the option of using VS2019 or VSC (my preference) which comes handy with IntelliSense/auto-completion. Unity's components are literally OOP "objects".
+Coding C# for Unity is surprisingly intuitive. You have the option of using Visual Studio or VSCode, which comes handy with IntelliSense/auto-completion. Unity's components are literally OOP "objects".
 
 I'm by no means already a Unity syntax expert, but what I've seen so far is very approachable for a programmer with a year's worth of experience.
 
@@ -66,7 +66,7 @@ I feel like there should be a more efficient way of creating levels than copy-pa
 
 One thing that I thought was pretty cool was this getter and setter in the scripts for the player's health and health bar.
 
-```
+```csharp
 // Update UI to match player's current health
 private void Update()
 {
@@ -76,7 +76,7 @@ private void Update()
 
 HealthBar needs to be able to know what the player's health is, but that variable is from Health.cs. To get around this:
 
-```
+```csharp
 // Var can be grabbed from outside, but can only be set inside this script
 public float currentHealth { get; private set; }
 ```

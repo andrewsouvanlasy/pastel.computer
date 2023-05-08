@@ -35,7 +35,7 @@ For demonstration purposes, I used a fun object to practice TDD with: the Desert
 
 I start by defining what I want the gun to do when fired, and then create the test before writing the actual code.
 
-```
+```kotlin
 @Test
 fun `Fire once and have 6 rounds remaining`() {
     val de = DesertEagle() // Has 7 rounds in a mag
@@ -68,7 +68,7 @@ What I want to happen is for a watermelon to be marked as "exploded" when it is 
 
 So once again, I'll create the test before the real implementation, and go from there.
 
-```
+```kotlin
 @Test
 fun `Watermelon should explode when shot once`() {
     val de = DesertEagle()
@@ -84,7 +84,7 @@ This test will ❌ fail if `hasExploded` is false, opposite of what I expected.
 
 For fun, I tested what would happen if I shot the watermelon a ridiculous amount of times.
 
-```
+```kotlin
 @Test
 fun `Watermelon should certainly explode when shot 2 bil+ times`() {
     val de = DesertEagle()

@@ -1,0 +1,260 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "iA Writer Quattro S", Consolas, Monaco, monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: $background;
+  color: $primary;
+}
+
+h1,
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+figure {
+  display: table;
+  max-width: 100%;
+  margin: 25px 0;
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+
+  figcaption {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background: $accent;
+    color: $background;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.center {
+      text-align: center;
+    }
+
+    &.right {
+      text-align: right;
+    }
+  }
+}
+
+code {
+  font-family: "iA Writer Quattro S", Consolas, Monaco, monospace;
+  background: rgba($accent, 0.2);
+  color: $accent;
+  padding: 1px 6px;
+  margin: 0 2px;
+  font-size: 0.95rem;
+}
+
+pre {
+  background: transparent !important;
+  padding: 20px 20px;
+  margin: 40px 0;
+  font-size: 0.95rem !important;
+  overflow: auto;
+  border: 1px solid $accent;
+
+  + pre {
+    border-top: 0;
+    margin-top: -40px;
+  }
+
+  @media ($phone) {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  code {
+    background: none !important;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    border: none;
+    color: $primary;
+  }
+}
+
+blockquote {
+  border-top: 1px solid $accent;
+  border-bottom: 1px solid $accent;
+  margin: 40px 0;
+  padding: 25px;
+
+  @media ($phone) {
+    padding-right: 0;
+  }
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  p {
+    position: relative;
+  }
+
+  p:first-of-type:before {
+    content: ">";
+    display: block;
+    position: absolute;
+    left: -25px;
+    color: $accent;
+  }
+}
+
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 40px 0;
+}
+
+table,
+th,
+td {
+  border: 1px dashed $accent;
+  padding: 10px;
+}
+
+th {
+  color: $accent;
+}
+
+ul,
+ol {
+  margin-left: 22px;
+  padding: 0;
+
+  li {
+    position: relative;
+  }
+
+  @media ($phone) {
+    margin-left: 20px;
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+
+  li {
+    counter-increment: li;
+  }
+
+  li:before {
+    content: counter(li);
+    position: absolute;
+    right: calc(100% + 10px);
+    color: $accent;
+    display: inline-block;
+    text-align: right;
+  }
+
+  ol {
+    margin-left: 38px;
+
+    li {
+      counter-increment: li;
+    }
+
+    li:before {
+      content: counters(li, ".") " ";
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  max-width: 864px;
+  min-height: 100vh;
+  margin: auto;
+
+  @media ($phone) {
+    padding: 20px;
+  }
+
+  @media print {
+    display: initial;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  @media print {
+    display: initial;
+  }
+}
+
+hr {
+  width: 100%;
+  border: none;
+  background: $secondary;
+  height: 1px;
+}
+
+sup {
+  line-height: 0;
+}

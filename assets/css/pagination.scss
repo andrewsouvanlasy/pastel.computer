@@ -1,0 +1,33 @@
+.pagination {
+  margin-bottom: 40px;
+
+  &-title {
+    display: flex;
+    text-align: center;
+    position: relative;
+    margin: 100px 0 20px;
+
+    &-h {
+      margin: 0 auto;
+      padding: 5px 10px;
+      background: $background;
+      color: $secondary;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      z-index: 1;
+    }
+
+    hr {
+      position: absolute;
+      margin-top: 15px;
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}

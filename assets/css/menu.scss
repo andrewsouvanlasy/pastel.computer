@@ -1,0 +1,16 @@
+.navigation-menu {
+  margin-bottom: 40px;
+
+  &-inner {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

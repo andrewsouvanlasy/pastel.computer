@@ -1,4 +1,4 @@
-baseurl = "https://pastel.computer"
+baseurl = "/"
 paginate = 4
 title = "pastel.computer"
 copyright = "Andrew Souvanlasy"

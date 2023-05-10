@@ -1,5 +1,5 @@
 ---
-title: An Intro to Artificial Neural Networks
+title: An Introduction to Neural Networks
 date: 2023-02-15
 description: Ready to activate your neurons?
 cover: /img/neuron-activation.webp

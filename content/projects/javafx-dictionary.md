@@ -2,7 +2,6 @@
 title: JavaFX Dictionary
 description: 📗 Look up any word in the English language. JavaFX desktop app using Free Dictionary API.
 cover: /img/showcase/javafx-dictionary.webp
-layout: single-no-meta
 weight: 3
 readingTime: false
 ---

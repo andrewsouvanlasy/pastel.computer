@@ -2,7 +2,6 @@
 title: Photo Archive
 description: An ASP.NET CRUD app to preserve history through photos.
 cover: https://user-images.githubusercontent.com/93152029/206315319-929030d0-afc8-4637-bea8-96627770f332.png
-layout: single-no-meta
 weight: 4
 readingTime: false
 ---

@@ -3,25 +3,18 @@
 <meta
   name="description"
   content="
-  {{ if .IsHome }}
-    {{ $.Site.Params.Subtitle }}
-  {{ else if .Description }}
+  {{ if .Description }}
     {{ .Description | plainify }}
   {{ else }}
     {{ .Summary | plainify }}
   {{ end }}"
 />
-<meta name="robots" content="noodp" />
 <link rel="canonical" href="{{ .Permalink }}" />
 
 <link rel="icon" href="{{ printf "img/favicon.ico" | absURL }}" type="image/x-icon">
-
-<!-- Theme Variables -->
 {{ $sass := resources.Get "css/style.scss" }}
 {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
-
-<!-- OG data -->
 <meta
   property="og:type"
   content="

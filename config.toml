@@ -4,19 +4,18 @@ title = "pastel.computer"
 copyright = "Andrew Souvanlasy"
 pygmentsUseClasses = true
 
-[params]
-  subtitle = "Andrew Souvanlasy's personal site"
-
 [menu]
   [[menu.main]]
-    name = "About"
+    name = "about"
     url = "/about"
     weight = 10
   [[menu.main]]
-    name = "Projects"
+    name = "projects"
     url = "/projects"
     weight = 20
   [[menu.main]]
-    name = "GitHub"
+    name = "github"
     url = "https://github.com/DreStation"
     weight = 30
+    [menu.main.params]
+      newTab = true

@@ -2,7 +2,6 @@
 title: anything.pics
 description: 📌 Your mobile pinboard to post images that inspire you.
 cover: /img/showcase/anything-pics.png
-layout: single-no-meta
 weight: 2
 readingTime: false
 ---

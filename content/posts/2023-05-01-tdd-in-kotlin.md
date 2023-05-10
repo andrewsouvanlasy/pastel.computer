@@ -1,5 +1,5 @@
 ---
-title: Demoing Test-driven Development with Exploding Watermelons
+title: Demoing Test-Driven Development with Exploding Watermelons
 date: 2023-05-01
 description: ✅ Works as intended.
 cover: /img/tdd.webp

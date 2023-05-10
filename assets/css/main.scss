@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+* {
   box-sizing: inherit;
 }
 
@@ -102,30 +100,14 @@ code {
 }
 
 pre {
-  background: transparent !important;
   padding: 20px 20px;
   margin: 40px 0;
-  font-size: 0.95rem !important;
   overflow: auto;
   border: 1px solid $accent;
 
-  + pre {
-    border-top: 0;
-    margin-top: -40px;
-  }
-
-  @media ($phone) {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
   code {
-    background: none !important;
     margin: 0;
     padding: 0;
-    font-size: inherit;
-    border: none;
-    color: $primary;
   }
 }
 
@@ -180,51 +162,15 @@ th {
 
 ul,
 ol {
-  margin-left: 22px;
+  margin-left: 20px;
   padding: 0;
 
   li {
     position: relative;
   }
-
-  @media ($phone) {
-    margin-left: 20px;
-  }
-}
-
-ol {
-  list-style: none;
-  counter-reset: li;
-
-  li {
-    counter-increment: li;
-  }
-
-  li:before {
-    content: counter(li);
-    position: absolute;
-    right: calc(100% + 10px);
-    color: $accent;
-    display: inline-block;
-    text-align: right;
-  }
-
-  ol {
-    margin-left: 38px;
-
-    li {
-      counter-increment: li;
-    }
-
-    li:before {
-      content: counters(li, ".") " ";
-    }
-  }
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   padding: 40px;
   max-width: 864px;
   min-height: 100vh;
@@ -232,19 +178,6 @@ ol {
 
   @media ($phone) {
     padding: 20px;
-  }
-
-  @media print {
-    display: initial;
-  }
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-
-  @media print {
-    display: initial;
   }
 }
 

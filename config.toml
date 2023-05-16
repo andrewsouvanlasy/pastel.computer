@@ -15,7 +15,7 @@ pygmentsUseClasses = true
     weight = 20
   [[menu.main]]
     name = "GitHub"
-    url = "https://github.com/DreStation"
+    url = "https://github.com/andrewsouvanlasy"
     weight = 30
     [menu.main.params]
       newTab = true

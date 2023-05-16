@@ -29,7 +29,7 @@ Many dev teams report significantly fewer defects and improvements in code quali
 
 For demonstration purposes, I used a fun object to practice TDD with: the Desert Eagle handgun. Why? Because it's cool.
 
-[The source code can be found on GitHub](https://github.com/DreStation/tdd-in-kotlin).
+[The source code can be found on GitHub](https://github.com/andrewsouvanlasy/tdd-in-kotlin).
 
 ### The first test case
 

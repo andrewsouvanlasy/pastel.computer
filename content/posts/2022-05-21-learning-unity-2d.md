@@ -6,7 +6,7 @@ cover: https://i.imgur.com/anZPFED.gif
 toc: true
 ---
 
-**[View source on GitHub](https://github.com/DreStation/unity-basic-2d-platformer)**
+**[View source on GitHub](https://github.com/andrewsouvanlasy/unity-basic-2d-platformer)**
 
 The first year of university is over, so I'm met with an abundance of time and no direction. After struggling to bring myself to start a coding project or to learn a language, then playing the excellent 2D game _Katana ZERO_, I decided to learn Unity 2D game development.
 

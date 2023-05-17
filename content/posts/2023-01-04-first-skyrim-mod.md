@@ -2,7 +2,7 @@
 title: Released my first Skyrim mod!
 date: 2023-01-04
 description: I did it, Mom!
-cover: img/first-skyrim-mod.webp
+# cover: img/first-skyrim-mod.webp
 tags: [devlog]
 ---
 
